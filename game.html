@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+			<title>Matching Game</title>
+			
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+		</head>
+		<style>
+		
+		#left {
+			width: 500px;
+			height: 500px;
+			float: left;
+		}	
+		
+		#right {
+			width: 500px;
+			height: 500px;
+			left: 500px;
+			float: left;
+			border-left: 2px solid black;
+		}
+		
+		#banner {
+			margin: auto;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		div {
+			position: absolute;
+		}
+		img {
+			position: absolute;
+		}
+		
+		</style>
+		<body id="body">
+			<div id="all">
+				<h2 id="banner">Matching Game</h2>
+				<p id="banner">Click on the extra boss on the left.</p>
+				<button type ="button" id="start" class="btn-lg btn-default">Click to begin</button>	
+				
+				<!-- Modal -->
+			    <div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+				
+					  <!-- Modal content-->
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <div class="modal-body">
+							<p id="next"></p>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="left">
+					</div>
+				<div id="right">
+					</div>				
+			</div>
+		</body>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</html>
